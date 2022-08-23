@@ -2,9 +2,10 @@
 
 ### Day 1 
 
-.callout[theme=📷] {
-  --emoji: unset;
-  --icon: "\f083"; /* copied from FontAwesome */
-  --icon-color: #c50a50;
-}
+::: {.callout-note appearance="simple"}
 
+## Pay Attention
+
+Using callouts is an effective way to highlight content that your reader give special consideration or attention.
+
+:::
