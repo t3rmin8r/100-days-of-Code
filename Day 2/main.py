@@ -15,3 +15,8 @@ b = int(tdn2)
 print(a + b)
 
 #GOT THIS all by myself!
+
+# Instructor suggested to replace lines 12-15 with below
+
+# result = int(tdn1 + tdn2)
+# print(result)
