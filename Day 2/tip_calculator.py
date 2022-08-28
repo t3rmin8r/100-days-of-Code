@@ -17,11 +17,11 @@ ea_party_pays = total_bill / peep_count
 
 # rounding 
 total_bill = round(total_bill, 2)
-ea_party_pays = round(ea_party_pays, 2)
+# ea_party_pays = round(ea_party_pays, 2)
 
 
 print(f"The total bill with tip is ${total_bill}")
-print(f"The total bill for each party is ${ea_party_pays}")
+print(f"The total bill for each party is ${round(ea_party_pays, 2)}")
 
 
 
