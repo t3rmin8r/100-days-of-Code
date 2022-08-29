@@ -22,9 +22,3 @@ total_bill = round(total_bill, 2)
 
 print(f"The total bill with tip is ${total_bill}")
 print(f"The total bill for each party is ${round(ea_party_pays, 2)}")
-
-
-
-
-
-
