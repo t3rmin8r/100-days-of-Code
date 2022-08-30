@@ -11,5 +11,5 @@ tip_asa_percent = tip / 100
 tip_amount = tip_asa_percent * bill
 total_bill = tip_amount + bill
 ea_friend_pays = total_bill / friend_count
-formatted_bill = "{:.2f}".format(ea_friend_pays)
-print(f"Each Friend Pays ${formatted_bill}")
+#print formatted payment amount that each friend pays
+print(f"Each Friend Pays ${'{:.2f}'.format(ea_friend_pays)}")
