@@ -8,7 +8,9 @@ year = int(input("Which year do you want to check? "))
 # Check if Evenly Divisible by 4
 
 if year % 4 == 0:
+    if year % 100 != 0:
+        print("Leap year.")
     if year % 400 == 0:
         print("Leap year.")
-else year % 100 == 0:
+else:
     print("Not leap year.")
