@@ -24,8 +24,7 @@ L = 25
 
 # ingredient pricing
 pep_small = 2
-pep_medium = 3
-pep_large = 3
+pep_med_or_Large = 3
 wants_extra_cheese = 1
 
 
@@ -52,7 +51,7 @@ if add_pepperoni == "Y":
     if size == "S":
         total_bill += pep_small
     else:
-        total_bill += pep_medium
+        total_bill += pep_med_or_Large
 
 if extra_cheese == "Y":
     total_bill += wants_extra_cheese
