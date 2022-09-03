@@ -38,7 +38,7 @@ if wants_pep == "Y":
 
 wants_extra_cheese = extra_cheese
 if wants_extra_cheese == "Y":
-    total_bill += 
+    total_bill += extra_cheese
 else:
     total_bill = total_bill
 # if size == "M": 
