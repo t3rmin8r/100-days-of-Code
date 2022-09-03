@@ -4,6 +4,7 @@ from audioop import add
 from cgitb import small
 from re import S
 from tkinter import Y
+from turtle import done
 
 
 print("Welcome to Python Pizza Deliveries!")
@@ -25,27 +26,36 @@ L = 25
 pep_small = 2
 pep_medium = 3
 pep_large = 3
-extra_cheese = 1
+wants_extra_cheese = 1
 
 
 #Calculate for inputs
+# This is how I started, but wasn't working 
+# After adding the Medium size so I knew the Large wouldn't work
+# if size == "S":
+#     total_bill += S
+# if add_pepperoni == "Y":
+#     total_bill += pep_small
+# if extra_cheese == "Y":
+#     total_bill += wants_extra_cheese
+
+####Below is the start of the teacher explination####
+
 if size == "S":
     total_bill += S
+elif size == "M":
+    total_bill += M
+elif size == "L":
+    total_bill += L
 
-wants_pep = add_pepperoni
-if wants_pep == "Y":
-    total_bill += pep_small
+if add_pepperoni == "Y":
+    if size == "S":
+        total_bill += pep_small
+    else:
+        total_bill += pep_medium
 
-wants_extra_cheese = extra_cheese
-if wants_extra_cheese == "Y":
-    total_bill += extra_cheese
-else:
-    total_bill = total_bill
-# if size == "M": 
-#     total_bill += M
-# if size == "L":
-#     total_bill += L
-
+if extra_cheese == "Y":
+    total_bill += wants_extra_cheese
 
 
 print(f"Your final bill is: ${total_bill}")
