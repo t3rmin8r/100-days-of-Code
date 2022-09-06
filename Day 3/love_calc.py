@@ -6,3 +6,7 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 
+joined_names = name1 + name2
+
+lower_names = joined_names.lower()
+
