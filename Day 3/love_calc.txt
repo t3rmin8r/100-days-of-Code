@@ -6,7 +6,7 @@
 
 # Then check for the number of times the letters in the word LOVE occurs. 
 
-# Then combine these numbers to make a 2 digit number.
+# Th4er.
 
 
 # Examples:
