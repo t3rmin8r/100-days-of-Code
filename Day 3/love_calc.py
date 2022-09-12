@@ -34,7 +34,7 @@ combined_score = int(combined_score)
 
 if combined_score < 10 or combined_score > 90:
     print(f"Your score is {combined_score}, you go together like coke and mentos.")
-elif combined_score > 40 or combined_score < 50:
+elif combined_score > 40 and combined_score < 50:
     print(f"Your score is {combined_score}, you are alright together.")
 else:
     print(f"Your score is {combined_score}")
