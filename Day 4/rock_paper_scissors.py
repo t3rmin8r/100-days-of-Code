@@ -1,3 +1,4 @@
+from multiprocessing.resource_sharer import stop
 import random
 
 rock = '''
@@ -27,17 +28,31 @@ scissors = '''
 ---.__(___)
 '''
 
-game_images = [rock, paper, scissors]
+shocker = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)___
+---.__(________)
+'''
+
+game_images = [rock, paper, scissors, shocker]
 
 user_choice = int(input('What do you choose? Type "0" for Rock, "1" for Paper or "2" for Scissors.\n'))
 #print(game_images[user_choice])
+
+if user_choice == 8675309:
+    print(game_images[3])
+    print("You WIN!!!")
+    stop
 
 computer_choice = random.randint(0, 2)
 print("Computer chose:")
 print(game_images[computer_choice])
 
 if user_choice >= 3 or user_choice < 0: 
-    print("You typed an invalid number, you lose!") 
+    print("You typed an invalid number, you lose!")
 elif user_choice == 0 and computer_choice == 2:
     print("You win!")
 elif computer_choice == 0 and user_choice == 2:
