@@ -31,26 +31,30 @@ scissors = '''
 
 game_images = [rock, paper, scissors]
 
-user_choice = int(input('What do you choose? Type "0" for Rock, "1" for Paper or "2" for Scissors.\n'))
-#print(game_images[user_choice])
+# This will keep the game running as long as the count is under 11
+count = 1
 
-computer_choice = random.randint(0, 2)
-print("Computer chose:")
-print(game_images[computer_choice])
+while (count < 11):
+    user_choice = int(input('What do you choose? Type "0" for Rock, "1" for Paper or "2" for Scissors.\n'))
+    #print(game_images[user_choice])
 
-if user_choice >= 3 or user_choice < 0: 
-    print("You typed an invalid number, you lose!")
-elif user_choice == 0 and computer_choice == 2:
-    print("You win!")
-elif computer_choice == 0 and user_choice == 2:
-    print("You lose")
-elif computer_choice > user_choice:
-    print("You lose")
-elif user_choice > computer_choice:
-    print("You win!")
-elif computer_choice == user_choice:
-    print("It's a draw")
+    computer_choice = random.randint(0, 2)
+    print("Computer chose:")
+    print(game_images[computer_choice])
 
+    if user_choice >= 3 or user_choice < 0: 
+        print("You typed an invalid number, you lose!")
+    elif user_choice == 0 and computer_choice == 2:
+        print("You win!")
+    elif computer_choice == 0 and user_choice == 2:
+        print("You lose")
+    elif computer_choice > user_choice:
+        print("You lose")
+    elif user_choice > computer_choice:
+        print("You win!")
+    elif computer_choice == user_choice:
+        print("It's a draw")
+    count += 1
 ####### Debugging challenge: #########
 #Try running this code and type 5.
 #It will give you an IndexError and point to line 32 as the issue.
