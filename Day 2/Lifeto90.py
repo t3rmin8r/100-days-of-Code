@@ -5,7 +5,7 @@ age = input("What is your current age?")
 #Write your code below this line 👇
 # My attempt
 ##### year = [365,52,12]
-##### life = 90
+##### life = 18
 
 ##### days = year[0]
 ##### weeks = year[1]
