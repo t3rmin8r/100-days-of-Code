@@ -68,5 +68,6 @@ while (count < 11):
     # Check if it's a draw
     elif computer_choice == user_choice:
         print(colored("It's a draw", 'yellow'))
+        playsound('Draw.mp3')
     # Increase the round counter
     count += 1
