@@ -35,7 +35,6 @@ game_images = [rock, paper, scissors]
 
 # Initialize the round counter
 count = 1
-
 # Start the game loop
 while (count < 11):
     # Prompt the user for their choice and store it in a variable
